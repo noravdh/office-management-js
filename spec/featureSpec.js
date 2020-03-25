@@ -23,4 +23,9 @@ describe('Feature test:', function(){
     meetingRoom.leave();
     expect(meetingRoom.isAvailable()).toBeTruthy();
   })
+
+  it('blocks entering when unavailable', function(){
+    meetingRoom.enter();
+    expect(function(){ meetingRoom.enter();}).toThrowError('cannot enter unavailable room');
+  })
 });

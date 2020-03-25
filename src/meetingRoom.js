@@ -4,6 +4,9 @@ class MeetingRoom{
   }
 
   enter() {
+    if(this.isAvailable() === false){
+      throw new Error('cannot enter unavailable room');
+    }
     this.available = false;
   }
 

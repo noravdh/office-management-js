@@ -10,4 +10,8 @@ class Office {
   list() {
     return this.rooms
   }
+
+  listAvailable() {
+    return this.rooms.filter(room => room.isAvailable() === true )
+  }
 };

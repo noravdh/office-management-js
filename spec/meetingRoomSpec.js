@@ -4,7 +4,7 @@ describe('MeetingRoom', function(){
   var meetingRoom;
   // var office;
   beforeEach(function(){
-    meetingRoom = new MeetingRoom();
+    meetingRoom = new MeetingRoom("Room 1");
     // office = jasmine.createSpyObj('office', ['officeMethod']);
   });
 
@@ -13,9 +13,13 @@ describe('MeetingRoom', function(){
     expect(meetingRoom.isAvailable()).toBeFalsy();
   });
 
-  it('can left', function(){
+  it('can be left', function(){
     meetingRoom.enter();
     meetingRoom.leave();
     expect(meetingRoom.isAvailable()).toBeTruthy();
   });
+
+  it('has a name', function(){
+    expect(meetingRoom.name).toEqual("Room 1")
+  })
 });

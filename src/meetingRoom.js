@@ -1,5 +1,6 @@
 class MeetingRoom{
-  constructor() {
+  constructor(name) {
+    this.name = name
     this.available = true;
   }
 

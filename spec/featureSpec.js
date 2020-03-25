@@ -10,7 +10,11 @@ describe('Feature test:', function(){
   });
 
   it('rooms are available by default', function(){
-    console.log(meetingRoom)
     expect(meetingRoom.isAvailable()).toBeTruthy();
   });
+
+  it('rooms are unavailable after entering', function(){
+    meetingRoom.enter();
+    expect(meetingRoom.isAvailable()).toBeFalsy();
+  })
 });

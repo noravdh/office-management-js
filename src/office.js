@@ -6,4 +6,8 @@ class Office {
   add(room) {
     this.rooms.push(room)
   }
+
+  list() {
+    return this.rooms
+  }
 };

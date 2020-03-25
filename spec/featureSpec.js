@@ -17,4 +17,10 @@ describe('Feature test:', function(){
     meetingRoom.enter();
     expect(meetingRoom.isAvailable()).toBeFalsy();
   })
+
+  it('rooms are available after leaving', function(){
+    meetingRoom.enter();
+    meetingRoom.leave();
+    expect(meetingRoom.isAvailable()).toBeTruthy();
+  })
 });

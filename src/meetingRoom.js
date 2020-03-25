@@ -7,6 +7,10 @@ class MeetingRoom{
     this.available = false;
   }
 
+  leave() {
+    this.available = true;
+  }
+
   isAvailable() {
     return this.available;
   }

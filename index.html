@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Office</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="src/office.js"></script>
+  <script src="src/meetingRoom.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+		<form id="add-room">
+			<input id="room-name" type="text" placeholder="Enter a room name"></input>
+			<input type="submit"></input>
+		</form>
+  </section>
+  
+  <section>
+    <h3>All rooms:</h3>
+  <table class="table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Room name</th>
+        <th scope="col">Availability</th>
+        <th scope="col">Enter Room</th>
+        <th scope="col">Leave Room</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id='hiddenRow-1'>
+        <th scope="row">1</th>
+        <td class="room-item-1"> <span class='value'></span></td>
+        <td class="availability" id="1"><span class='value'>Available</span></td>
+        <td> <button class="enter-room" id="1"> Enter room </button></td>
+        <td> <button class="leave-room" id="1">Leave room</button></td>
+      </tr>
+      <tr id='hiddenRow-2'>
+        <th scope="row">2</th>
+        <td class="room-item-2"> <span class='value'></span></td>
+        <td class="availability" id="2"><span class='value'>Available</span></td>
+        <td> <button class="enter-room" id="2"> Enter room </button></td>
+        <td> <button class="leave-room" id="2">Leave room</button></td>
+      </tr>
+      <tr id='hiddenRow-3'>
+        <th scope="row">3</th>
+        <td class="room-item-3"> <span class='value'></span></td>
+        <td class="availability" id="3"><span class='value'>Available</span></td>
+        <td> <button class="enter-room" id="3"> Enter room </button></td>
+        <td> <button class="leave-room" id="3">Leave room</button></td>
+      </tr>
+      <tr id='hiddenRow-4'>
+        <th scope="row">4</th>
+        <td class="room-item-4"> <span class='value'></span></td>
+        <td class="availability" id="4"><span class='value'>Available</span></td>
+        <td> <button class="enter-room" id="4"> Enter room </button></td>
+        <td> <button class="leave-room" id="4">Leave room</button></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="src/interface.js"></script>
+</body>
+</html>

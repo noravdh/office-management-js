@@ -4,11 +4,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  align-content: center;
  }
 
  section {
   text-align: center;
+  margin: 10px;
  }
 
  .intro {

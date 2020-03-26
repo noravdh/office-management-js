@@ -1,0 +1,27 @@
+body {
+  background: url("cool-background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-content: center;
+ }
+
+ section {
+  text-align: center;
+ }
+
+ .intro {
+   display: inline-block;
+   margin:  auto;
+ }
+
+.table {
+  padding: 5px;
+}
+
+#add-room .btn.btn-primary {
+  padding: 2px 25px 2px 25px;
+  vertical-align: baseline;
+}
+
